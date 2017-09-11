@@ -33,8 +33,10 @@ public void after() throws Exception {
 * 
 */ 
 @Test
-public void testRunAction() throws Exception { 
-//TODO: Test goes here... 
+public void testRunAction() throws Exception {
+    String url = this.getClass().getPackage().getName();
+//    url.replace("/",".");
+    System.out.println("url:"+url);
 }
 @Test
 public void testLoginActionSuccess() throws Exception {
